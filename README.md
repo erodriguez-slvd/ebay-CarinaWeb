@@ -35,23 +35,17 @@ The project focuses on testing the eBay website, using core testing tools such a
 - [ ] Install and configure [Apache Maven 3.6.0+](http://maven.apache.org/)
 - [ ] Clone the repo.
 - [ ] Run mvn clean install in terminal.
+- [ ] Start the selenium server with the command: java -jar selenium-server-4.18.1.jar standalone.
 
-[//]: # (<!-- IMPLEMENTATION DETAILS -->)
+<!-- IMPLEMENTATION DETAILS -->
 
-[//]: # (## Implementation details)
+## Implementation details
 
-[//]: # ()
-[//]: # (### )
-
-[//]: # ()
-[//]: # (-  )
-
-[//]: # ()
-[//]: # (```)
-
-[//]: # ( )
-[//]: # (```)
-
+### Migration from pure Selenium
+1. Modify the _config.properties file.
+2. Page classes should extend AbstractPage.
+3. Test classes should implement IAbstractTest.
+4. Use ExtendedWebElement instead of WebElement.
 
 <!-- USEFUL DOCUMENTATION -->
 ## Useful Documentation
