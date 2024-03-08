@@ -47,6 +47,14 @@ The project focuses on testing the eBay website, using core testing tools such a
 3. Test classes should implement IAbstractTest.
 4. Use ExtendedWebElement instead of WebElement.
 
+### Screenshot with Carina
+
+1. Create a class that implements ITestListener. In this project it is done in BaseTest.
+2. Override the **onTestFailure** method.
+3. Add the code to take a screenshot with this method.
+4. Get the Test method name and take a screenshot with the test name. Then place it in the desired destination folder.
+5. Finally, add the annotation @Listeners(BaseTest.class) to the Test classes.
+
 <!-- USEFUL DOCUMENTATION -->
 ## Useful Documentation
 
