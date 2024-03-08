@@ -26,9 +26,6 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//div[@class='carousel vl-carousel carousel--slides carousel--peek']/descendant::button[@class='carousel__control carousel__control--next']")
     private ExtendedWebElement carouselNextButton;
 
-
-
-
     public void clickOnSearchbar(){
         clickOnElement(searchBar);
     }
@@ -63,9 +60,9 @@ public class HomePage extends BasePage {
         int index=7;
         System.out.println(todayDealsTitlesCarousel.get(index).getText());
         clickOnElement(carouselNextButton);
-        wait5Seconds();
+        wait3Seconds();
         clickOnElement(todayDealsTitlesCarousel.get(index));
-        wait5Seconds();
+        wait3Seconds();
         return PageFactory.initElements(driver, ProductDetailPage.class);
     }
 

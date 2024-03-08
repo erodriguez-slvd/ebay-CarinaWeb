@@ -2,7 +2,6 @@ package com.solvd.carina.demo.pages;
 
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public abstract class BasePage extends AbstractPage {
@@ -13,11 +12,11 @@ public abstract class BasePage extends AbstractPage {
         element.click();
     }
     public  void sendKeysToElement(ExtendedWebElement element, String input){
-        element.sendKeys(Keys.valueOf(input));
+        element.type(input);
     }
-    public void wait5Seconds(){
+    public void wait3Seconds(){
         try {
-            Thread.sleep(5000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
